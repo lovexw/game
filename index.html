@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小吴游戏库</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">🎮 小吴游戏库</h1>
+      <p class="tagline">那些年，一起肝过的游戏</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="toolbar">
+      <div class="filters" id="filters"></div>
+      <div class="toolbar-right">
+        <input id="search" type="search" placeholder="🔍 搜索游戏…" autocomplete="off">
+        <select id="sort" aria-label="排序方式">
+          <option value="default">默认排序</option>
+          <option value="rating">评分最高</option>
+          <option value="playtime">时长最长</option>
+          <option value="title">名称排序</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    小吴的游戏记忆馆 · 游戏数据在 <code>data.js</code> 中维护，随时补充 · 持续更新中… 🎮
+  </footer>
+
+  <!-- 游戏详情弹窗 -->
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

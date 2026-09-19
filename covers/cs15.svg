@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3f2b8"/>
+      <stop offset="1" stop-color="#a5d6a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#bg)"/>
+  <circle cx="272" cy="34" r="58" fill="#ffffff" opacity="0.45"/>
+  <circle cx="24" cy="158" r="46" fill="#7ab86a" opacity="0.25"/>
+  <g opacity="0.8" stroke="#4a6a2a" stroke-width="2.5" fill="none">
+    <circle cx="160" cy="60" r="26"/>
+    <line x1="160" y1="22" x2="160" y2="40"/>
+    <line x1="160" y1="80" x2="160" y2="98"/>
+    <line x1="122" y1="60" x2="140" y2="60"/>
+    <line x1="180" y1="60" x2="198" y2="60"/>
+  </g>
+  <circle cx="160" cy="60" r="4.5" fill="#4a6a2a"/>
+  <text x="160" y="126" font-size="26" font-weight="bold" fill="#2c3a14" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif">反恐精英 1.5</text>
+  <text x="160" y="152" font-size="11" fill="#5a7a3a" text-anchor="middle" letter-spacing="4" font-family="Georgia,serif">COUNTER-STRIKE</text>
+</svg>
