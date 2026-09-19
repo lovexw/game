@@ -1,6 +1,21 @@
 # 🎮 小吴游戏库
 
-一个纯静态的个人游戏收藏馆网页：卡片式展示、封面、平台标签、游戏时长、个人成就和评分，点卡片还有详情弹窗。无需任何依赖，双击 `index.html` 即可打开（或用任意静态服务器）。
+一个纯静态的个人游戏收藏馆网页：卡片式展示、封面、平台标签、游戏时长、个人成就和评分，点卡片还有详情弹窗。
+
+- 🌐 线上地址：**https://game-34j.pages.dev**（Cloudflare Pages）
+- 🐙 代码仓库：**https://github.com/lovexw/game**
+- 📱 无需任何依赖，本地双击 `index.html` 也能打开
+
+## 更新 & 部署
+
+改完代码后一键同步 GitHub + 部署 Cloudflare（账号 0471666@gmail.com）：
+
+```bash
+./deploy.sh "本次更新说明"
+```
+
+只部署不同步 GitHub：`wrangler pages deploy . --project-name=game --branch=main`
+（首次使用需先 `wrangler login` 授权 Cloudflare；GitHub 凭证由 `gh` CLI 管理，账号 lovexw）
 
 ## 文件结构
 
