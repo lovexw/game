@@ -466,3 +466,54 @@ const GAMES = [
     ],
   },
 ];
+
+// ============================================================
+//  我的游戏设备（硬件）
+// ------------------------------------------------------------
+//  新增设备：复制下面任意一个 { ... } 对象，粘贴到数组里修改即可
+//  字段说明：
+//  id          唯一标识（英文小写连字符）
+//  name        设备名称
+//  image       设备图片路径（放在 covers/devices/ 下）
+//  brand       品牌 / 厂商
+//  specs       核心配置简述
+//  year        购入年份
+//  status      当前状态
+//  description 设备介绍
+// ============================================================
+
+const DEVICES = [
+  {
+    id: "switch-oled",
+    name: "Switch OLED 日版",
+    image: "covers/devices/switch-oled.jpg",
+    brand: "Nintendo",
+    specs: "7寸 OLED屏 · 64GB · 白色 Joy-Con",
+    year: 2022,
+    status: "日常主力",
+    description:
+      "掌机模式 + 主机模式无缝切换，OLED 屏幕色彩惊艳。旷野之息、王国之泪、空洞骑士，都是在这台机器上通关的。",
+  },
+  {
+    id: "pc-i7",
+    name: "Windows i7 主机",
+    image: "covers/devices/pc-i7.jpg",
+    brand: "DIY 组装",
+    specs: "Intel i7 · RGB 水冷 · 高性能独显",
+    year: 2021,
+    status: "主力游戏机",
+    description:
+      "从 CS1.5 到哈迪斯，从 LOL 到死亡细胞，PC 端的游戏几乎都在这台机器上。装机时最快乐，打游戏时更快乐。",
+  },
+  {
+    id: "ps5-disc",
+    name: "PS5 国行光驱版",
+    image: "covers/devices/ps5-disc.jpg",
+    brand: "Sony",
+    specs: "国行光驱版 · 4K 蓝光 · DualSense",
+    year: 2023,
+    status: "次世代体验",
+    description:
+      "DualSense 手柄的自适应扳机和触觉反馈，第一次在狙击精英里扣动扳机时真的被震到了。国行备份法解锁外服，真香。",
+  },
+];

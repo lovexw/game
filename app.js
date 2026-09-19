@@ -216,14 +216,41 @@ function renderFilters() {
       state.filter = btn.dataset.plat;
       renderFilters();
       renderGrid();
+  renderDevices();
     });
   });
+}
+
+
+/* ---------- 设备展示 ---------- */
+function deviceCardHTML(d) {
+  return `
+  <article class="device-card">
+    <div class="device-img-wrap">
+      <img src="${esc(d.image)}" alt="${esc(d.name)}" loading="lazy"
+           onerror="this.style.display='none'">
+    </div>
+    <div class="device-info">
+      <h3 class="device-name">${esc(d.name)}</h3>
+      <p class="device-brand">🏷️ ${esc(d.brand)} · ${d.year} 年购入</p>
+      <p class="device-specs">⚙️ ${esc(d.specs)}</p>
+      <span class="device-status">${esc(d.status)}</span>
+      <p class="device-desc">${esc(d.description || "")}</p>
+    </div>
+  </article>`;
+}
+
+function renderDevices() {
+  const grid = $("#devicesGrid");
+  if (!grid || typeof DEVICES === "undefined") return;
+  grid.innerHTML = DEVICES.map(deviceCardHTML).join("");
 }
 
 function init() {
   renderStats();
   renderFilters();
   renderGrid();
+  renderDevices();
 
   $("#search").addEventListener("input", (e) => {
     state.query = e.target.value;
